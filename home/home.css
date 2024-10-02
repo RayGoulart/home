@@ -1,0 +1,144 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: linear-gradient(to bottom, #1c0620, #2e0933, #6b146a, #4a0c66);
+    color: white;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    background:  linear-gradient(to bottom, #1c0620, #2e0933, #6b146a, #4a0c66);;
+}
+
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(34, 34, 34, 0.9);
+    position: relative; /* Para permitir o posicionamento do logo e ícone */
+}
+
+.logo {
+    width: 50px;
+    height: auto;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.profile-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+input[type="text"] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 25px;
+    border: none;
+    background-color: #333;
+    color: white;
+    margin-right: 10px;
+}
+
+.search-button {
+    padding: 10px 20px;
+    border-radius: 25px;
+    border: none;
+    background-color: #000;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.search-button:hover {
+    background-color: #444; /* Cor ao passar o mouse */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px; /* Espaçamento interno */
+}
+
+.music-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    width: 90%;
+    max-width: 1200px;
+}
+
+.music-item {
+    background-color: rgba(68, 68, 68, 0.8);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.music-item:hover {
+    background-color: #555;
+    transform: translateY(-3px); /* Levanta ligeiramente o item ao passar o mouse */
+}
+
+.music-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+.music-title {
+    font-size: 18px;
+    color: white;
+    margin: 10px 0 5px;
+}
+
+.music-description {
+    font-size: 14px;
+    color: #ccc;
+    margin: 0;
+}
+
+.playlists {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.create-playlist {
+    background-color: rgba(68, 68, 68, 0.8);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 500px;
+}
+
+.playlist-input,
+.playlist-description-input {
+    width: 100%;
+    padding: 10px;
+    margin: 10
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #222;
+}
